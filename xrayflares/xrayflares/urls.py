@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('xrayflares/', include('plugin.urls')),
+    path('plugin/', include('plugin.urls')),
     path('admin/', admin.site.urls),
 ]
+# http://myservice.com/plugin/...... -> plugin/urls.py
+
