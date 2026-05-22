@@ -20,6 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('plugin/', include('plugin.urls')),
     path('admin/', admin.site.urls),
+    path('', include('core.urls')),  # home en la raíz
 ]
 # http://myservice.com/plugin/...... -> plugin/urls.py
 
